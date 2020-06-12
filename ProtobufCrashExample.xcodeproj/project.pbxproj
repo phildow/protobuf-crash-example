@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D3506446B05F711BFA14635 /* Pods_ProtobufCrashExample_ProtobufCrashExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A62EC7636E648C07C92539 /* Pods_ProtobufCrashExample_ProtobufCrashExampleTests.framework */; };
 		2A31B15791D6404741510F82 /* Pods_ProtobufCrashExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E7230AF6F147852AE42327 /* Pods_ProtobufCrashExample.framework */; };
-		60FA1FA06FB29C327284A7DB /* Pods_ProtobufCrashExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE0B0E240840B1D047478F4 /* Pods_ProtobufCrashExampleTests.framework */; };
 		E35D3CC22494352A001E64C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D3CC12494352A001E64C1 /* AppDelegate.swift */; };
 		E35D3CC42494352A001E64C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D3CC32494352A001E64C1 /* SceneDelegate.swift */; };
 		E35D3CC62494352A001E64C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D3CC52494352A001E64C1 /* ContentView.swift */; };
@@ -17,6 +17,7 @@
 		E35D3CCE2494352D001E64C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35D3CCC2494352D001E64C1 /* LaunchScreen.storyboard */; };
 		E35D3CD92494352D001E64C1 /* ProtobufCrashExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D3CD82494352D001E64C1 /* ProtobufCrashExampleTests.swift */; };
 		E35D3CE424943614001E64C1 /* LocalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D3CE324943614001E64C1 /* LocalClass.swift */; };
+		E35D3CE524943EFC001E64C1 /* LocalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D3CE324943614001E64C1 /* LocalClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,10 +32,12 @@
 
 /* Begin PBXFileReference section */
 		00F6663D3BE74C8C82C8B391 /* Pods-ProtobufCrashExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufCrashExample.release.xcconfig"; path = "Target Support Files/Pods-ProtobufCrashExample/Pods-ProtobufCrashExample.release.xcconfig"; sourceTree = "<group>"; };
+		06A62EC7636E648C07C92539 /* Pods_ProtobufCrashExample_ProtobufCrashExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtobufCrashExample_ProtobufCrashExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FEB30607270B7EC0575F1D /* Pods-ProtobufCrashExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufCrashExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ProtobufCrashExampleTests/Pods-ProtobufCrashExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		61E7230AF6F147852AE42327 /* Pods_ProtobufCrashExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtobufCrashExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DE0B0E240840B1D047478F4 /* Pods_ProtobufCrashExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtobufCrashExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F355C7E34F4C893801A5945 /* Pods-ProtobufCrashExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufCrashExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ProtobufCrashExampleTests/Pods-ProtobufCrashExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		70EAD0EC61085424F42E1583 /* Pods-ProtobufCrashExample-ProtobufCrashExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufCrashExample-ProtobufCrashExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ProtobufCrashExample-ProtobufCrashExampleTests/Pods-ProtobufCrashExample-ProtobufCrashExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7336C6EA7C3668A39D2D7676 /* Pods-ProtobufCrashExample-ProtobufCrashExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufCrashExample-ProtobufCrashExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ProtobufCrashExample-ProtobufCrashExampleTests/Pods-ProtobufCrashExample-ProtobufCrashExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		85BCDD83F68FACBF9CC39952 /* Pods-ProtobufCrashExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufCrashExample.debug.xcconfig"; path = "Target Support Files/Pods-ProtobufCrashExample/Pods-ProtobufCrashExample.debug.xcconfig"; sourceTree = "<group>"; };
 		E35D3CBE2494352A001E64C1 /* ProtobufCrashExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtobufCrashExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35D3CC12494352A001E64C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60FA1FA06FB29C327284A7DB /* Pods_ProtobufCrashExampleTests.framework in Frameworks */,
+				1D3506446B05F711BFA14635 /* Pods_ProtobufCrashExample_ProtobufCrashExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,8 @@
 				00F6663D3BE74C8C82C8B391 /* Pods-ProtobufCrashExample.release.xcconfig */,
 				6F355C7E34F4C893801A5945 /* Pods-ProtobufCrashExampleTests.debug.xcconfig */,
 				50FEB30607270B7EC0575F1D /* Pods-ProtobufCrashExampleTests.release.xcconfig */,
+				70EAD0EC61085424F42E1583 /* Pods-ProtobufCrashExample-ProtobufCrashExampleTests.debug.xcconfig */,
+				7336C6EA7C3668A39D2D7676 /* Pods-ProtobufCrashExample-ProtobufCrashExampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -85,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				61E7230AF6F147852AE42327 /* Pods_ProtobufCrashExample.framework */,
-				6DE0B0E240840B1D047478F4 /* Pods_ProtobufCrashExampleTests.framework */,
+				06A62EC7636E648C07C92539 /* Pods_ProtobufCrashExample_ProtobufCrashExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,6 +178,8 @@
 				E35D3CD02494352D001E64C1 /* Sources */,
 				E35D3CD12494352D001E64C1 /* Frameworks */,
 				E35D3CD22494352D001E64C1 /* Resources */,
+				9F0ECC6FD11F82A15A001796 /* [CP] Embed Pods Frameworks */,
+				175C322B37C7BDCEE1542C22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,7 +206,6 @@
 					};
 					E35D3CD32494352D001E64C1 = {
 						CreatedOnToolsVersion = 11.5;
-						TestTargetID = E35D3CBD2494352A001E64C1;
 					};
 				};
 			};
@@ -243,6 +249,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		175C322B37C7BDCEE1542C22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProtobufCrashExample-ProtobufCrashExampleTests/Pods-ProtobufCrashExample-ProtobufCrashExampleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProtobufCrashExample-ProtobufCrashExampleTests/Pods-ProtobufCrashExample-ProtobufCrashExampleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProtobufCrashExample-ProtobufCrashExampleTests/Pods-ProtobufCrashExample-ProtobufCrashExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7A225A37113A313B9A3AAEDC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +288,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9F0ECC6FD11F82A15A001796 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProtobufCrashExample-ProtobufCrashExampleTests/Pods-ProtobufCrashExample-ProtobufCrashExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProtobufCrashExample-ProtobufCrashExampleTests/Pods-ProtobufCrashExample-ProtobufCrashExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProtobufCrashExample-ProtobufCrashExampleTests/Pods-ProtobufCrashExample-ProtobufCrashExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A9B9C9263849DED39998C1DF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,7 +320,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ProtobufCrashExampleTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ProtobufCrashExample-ProtobufCrashExampleTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -339,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35D3CE524943EFC001E64C1 /* LocalClass.swift in Sources */,
 				E35D3CD92494352D001E64C1 /* ProtobufCrashExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,10 +564,9 @@
 		};
 		E35D3CE12494352D001E64C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F355C7E34F4C893801A5945 /* Pods-ProtobufCrashExampleTests.debug.xcconfig */;
+			baseConfigurationReference = 70EAD0EC61085424F42E1583 /* Pods-ProtobufCrashExample-ProtobufCrashExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K5SNYPF7SQ;
 				INFOPLIST_FILE = ProtobufCrashExampleTests/Info.plist;
@@ -536,20 +576,44 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L",
+					"${PODS_ROOT}/TensorIOTensorFlow/Frameworks/tensorflow.framework",
+					"-l\"c++\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"DSJSONSchemaValidation\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"VideoToolbox\"",
+					"-force_load",
+					"${PODS_ROOT}/TensorIOTensorFlow/Frameworks/tensorflow.framework/tensorflow",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ai.doc.ProtobufCrashExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProtobufCrashExample.app/ProtobufCrashExample";
 			};
 			name = Debug;
 		};
 		E35D3CE22494352D001E64C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50FEB30607270B7EC0575F1D /* Pods-ProtobufCrashExampleTests.release.xcconfig */;
+			baseConfigurationReference = 7336C6EA7C3668A39D2D7676 /* Pods-ProtobufCrashExample-ProtobufCrashExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K5SNYPF7SQ;
 				INFOPLIST_FILE = ProtobufCrashExampleTests/Info.plist;
@@ -559,11 +623,36 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L",
+					"${PODS_ROOT}/TensorIOTensorFlow/Frameworks/tensorflow.framework",
+					"-l\"c++\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"DSJSONSchemaValidation\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"VideoToolbox\"",
+					"-force_load",
+					"${PODS_ROOT}/TensorIOTensorFlow/Frameworks/tensorflow.framework/tensorflow",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ai.doc.ProtobufCrashExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProtobufCrashExample.app/ProtobufCrashExample";
 			};
 			name = Release;
 		};

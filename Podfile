@@ -10,7 +10,7 @@ target 'ProtobufCrashExample' do
   # Pods for ProtobufCrashExample
 
   target 'ProtobufCrashExampleTests' do
-    inherit! :search_paths
+    # inherit! :search_paths
     # Pods for testing
   end
 
