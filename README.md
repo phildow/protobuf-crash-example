@@ -79,11 +79,13 @@ At this point I can run unit tests without any problems. You'll find these fixes
 
 ### 2. Remove some other linker flags
 
-From the test target's other linker flags build settings, remove $(inherited) and the references to the tensorflow.framework.
+From the test target's other linker flags build settings, remove `$(inherited)` and the link and force load flags to `tensorflow.framework`. Interestingly, there are no references to libprotobuf to remove.
 
 At this point I can run unit tests without any problems. You'll find these fixes in the *linker-fix* branch of this repository.
 
 In fact, I can remove all the other linker flags from both the test target and the application target and everything works fine. So why does cocoapods set these at all?
+
+Of course, any time I run `pod install` or `pod update` again, this change will be overridden and the linker flags will reappear.
 
 ## Hypothesis
 
@@ -94,3 +96,7 @@ My hypothesis is that the libprotobuf library is being linked twice into the exe
 If the protobuf library is being linked into the executable a second time with a test host is used, it's also not clear to me why the symbols from this library can't be found during the linker step when I clear the test host. It's like the library either isn't being linked at all, or it's being linked twice?
 
 And why can I remove all of the linker flags from both the test target and the host application without any consequences? Why does cocoapods set these at all?
+
+### Problem with tensorflow.framework?
+
+Given that the second solution requires removing references to `tensorflow.framework` we might speculate that the libprotobuf library has already been statically linked into the tensorfow library being vended by that framework, but if that were the case just running the application ought to cause this same error, since the other linker flags for the application would link libprotobuf in a second time. But this is only a problem when running the tests.
