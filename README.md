@@ -85,7 +85,7 @@ At this point I can run unit tests without any problems. You'll find these fixes
 
 In fact, I can remove all the other linker flags from both the test target and the application target and everything works fine. So why does cocoapods set these at all?
 
-Of course, any time I run `pod install` or `pod update` again, this change will be overridden and the linker flags will reappear.
+Of course, any time I run `pod install` or `pod update` again, cocoapods warns me that the target overrides the `OTHER_LDFLAGS` which can lead to problems with the cocoapods installation.
 
 ## Hypothesis
 
