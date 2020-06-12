@@ -69,15 +69,11 @@ There are two ways to fix this, both of which lead me to the same hypothesis. I 
 
 Set the Host Application for the test target to None.
 
-This is not ideal, as we lose access to the host application's bundle and must now manually include every class from the application module that we want to test in the test target, so:
+Now, however, during the test targets linking step I get errors that symbols in the two vended libraries from TensorIOTensorFlow, *nsync* and *libprotobuf*, cannot be found. If I inspect the other linker flags, I see that those two libraries are linked into the host application but not into the test target. I can try to manually add them, but then I'm told that the libraries cannot be find.
 
-Check the tests target in Target Membership for any application module files I want to include in the test 
+The soultion is to comment out `inherit! :search_paths` for the tests target in the Podfile and to rebuild the project with `pod install`
 
-If I just build at this point I get file not found errors for files in the TensorIOTensorFlow pod, so:
-
-Comment out `inherit! :search_paths` for the tests target in the Podfile
-
-Rebuild the project with `pod install`
+Finally, check the tests target in Target Membership for any application module files I want to include in the test.
 
 At this point I can run unit tests without any problems. You'll find these fixes in the *no-test-host-fix* branch of this repository.
 
@@ -95,14 +91,6 @@ The protobuf descriptor database is responsible for keeping track of the availab
 
 My hypothesis is that the libprotobuf library is being linked twice into the executable when running tests in a host application and so is being loaded twice, leading to this second round of initalization with the singleton. It's not clear to me if it's linked the first time as a static library or a dynamic library, but it does seem clear that the library is being linked a second time as a dynamic library, and when the library is loaded a second time, key-values are being added a second time to the singleton map, which leads to the error.
 
-## inherit! :search_paths
+If the protobuf library is being linked into the executable a second time with a test host is used, it's also not clear to me why the symbols from this library can't be found during the linker step when I clear the test host. It's like the library either isn't being linked at all, or it's being linked twice?
 
-What I fail to understand is why this behavior occurs with the default Podfile settings. My understanding of the `inherit! search_paths` setting in the test target is that it's exaclty supposed to prevent this double linking:
-
-https://guides.cocoapods.org/syntax/podfile.html#inherit_bang
-
-"Available Modes: + :complete The target inherits all behaviour from the parent. + :none The target inherits none of the behaviour from the parent. + :search_paths The target inherits the search paths of the parent only."
-
-With the `:search_paths` options, doesn't that mean that only header and framework search paths will be inherited and not linking behavior? But if I inspect the other linker flags, it looks like linker behavior is also being inherited.
-
-Moreover, as I mentioned above, I can remove all of the other linker flags from both the application and test targets and everything works fine. So why is cococpoads setting these flags at all?
+And why can I remove all of the linker flags from both the test target and the host application without any consequences? Why does cocoapods set these at all?
